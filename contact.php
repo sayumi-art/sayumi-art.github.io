@@ -1,3 +1,10 @@
+<?php
+if($_POST["message"]){
+	mail("sayumi.spiegel@gmail.com",$_POST["subject"],$_POST["message"],$_POST["email"];
+	$thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,29 +63,20 @@
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
-                <li class="has-children">
-                  <a href="single.html">Gallery</a>
+                <li class="has-children active">
+                  <a href="index.html">Gallery</a>
                   <ul class="dropdown">
-                    <li><a href="#">Nature</a></li>
-                    <li><a href="#">Portrait</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Architecture</a></li>
-                    <li><a href="#">Animals</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li class="has-children">
-                      <a href="#">Sub Menu</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="schein.html">Schein & Sein</a></li>
+                    <li><a href="spiegel.html">Spiegelbilder</a></li>
+                    <li><a href="portrait.html">Portraits</a></li>
+                    <li><a href="nature.html">Nature</a></li>
+					<li><a href="aqua">Aquarelles</a></li>
+					<li><a href="drawing">Drawings</a></li>
                   </ul>
                 </li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -125,7 +123,10 @@
 
           <div class="row">
             <div class="col-lg-8 mb-5">
-              <form action="#">
+			
+			  <?=thankYou ?>
+			  
+              <form action="contact.php">
                
 
                 <div class="row form-group">
@@ -174,13 +175,11 @@
             <div class="col-lg-3 ml-auto">
               <div class="mb-3 bg-white">
                 <p class="mb-0 font-weight-bold">Address</p>
-                <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                <p class="mb-4">13055 Berlin, Germany</p>
 
-                <p class="mb-0 font-weight-bold">Phone</p>
-                <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
 
                 <p class="mb-0 font-weight-bold">Email Address</p>
-                <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                <p class="mb-0"><a href="#">sayumi.spiegel@gmail.com</a></p>
 
               </div>
               
