@@ -63,20 +63,20 @@ if($_POST["message"]){
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
-                <li class="has-children active">
+                <li class="has-children">
                   <a href="index.html">Gallery</a>
                   <ul class="dropdown">
-                    <li><a href="schein.html">Schein & Sein</a></li>
+					<li><a href="schein.html">Schein & Sein</a></li>
                     <li><a href="spiegel.html">Spiegelbilder</a></li>
                     <li><a href="portrait.html">Portraits</a></li>
                     <li><a href="nature.html">Nature</a></li>
-					<li><a href="aqua">Aquarelles</a></li>
-					<li><a href="drawing">Drawings</a></li>
+					<li><a href="aqua.html">Aquarelles</a></li>
+					<li><a href="drawing.html">Drawings</a></li>
                   </ul>
                 </li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="https://sayumi-art.com/contact.php">Contact</a></li>
               </ul>
             </nav>
           </div>
